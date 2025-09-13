@@ -26,7 +26,9 @@ const index = async () => {
 // function is called from Preview Event page
 const show = async (eventId) => {
   try {
-    console.log("eventId:", eventId);
+    // console.log("eventId:", eventId);
+
+    // console.log("Token being sent:", localStorage.getItem("token"));
 
     const res = await fetch(`${BASE_URL}/${eventId}`, {
       method: "GET",

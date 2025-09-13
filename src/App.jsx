@@ -43,7 +43,7 @@ function App() {
     );
   } else {
     return (
-      <div className="App bg-[#DFE4EA] h-screen" >
+      <div className="App bg-[#DFE4EA] min-h-screen" >
         <div className="h-10"></div>
         <Routes>
           <Route path="/sign-up" element={<SignUpForm />} />

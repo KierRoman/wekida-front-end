@@ -92,7 +92,7 @@ const CreateEvent = () => {
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
               type="text"
               id="event-title"
-              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-75"
+              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-full"
               placeholder="Enter event title"
             />
           </div>
@@ -111,7 +111,7 @@ const CreateEvent = () => {
                 onChange={(e) => setFormData({ ...formData, startDate: e.target.value })}
                 type="datetime-local"
                 id="event-start-date"
-                className="my-2 border border-gray-200 px-3 py-2 rounded-md"
+                className="my-2 border border-gray-200 px-3 py-2 rounded-md w-full"
                 placeholder="MM/DD/YYYY"
               />
             </div>
@@ -125,7 +125,7 @@ const CreateEvent = () => {
                 onChange={(e) => setFormData({ ...formData, endDate: e.target.value })}
                 type="datetime-local"
                 id="event-end-date"
-                className="my-2 border border-gray-200 px-3 py-2 rounded-md"
+                className="my-2 border border-gray-200 px-3 py-2 rounded-md w-full"
                 placeholder="MM/DD/YYYY"
               />
             </div>
@@ -143,7 +143,7 @@ const CreateEvent = () => {
               onChange={(e) => setFormData({ ...formData, address: e.target.value })}
               type="text"
               id="address"
-              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-75"
+              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-full"
               placeholder="Address"
             />
           </div>
@@ -158,7 +158,7 @@ const CreateEvent = () => {
               value={formData.category}
               onChange={(e) => setFormData({ ...formData, category: e.target.value })}
               id="category"
-              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-75"
+              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-full"
             >
               <option value="" disabled hidden>
                 Select Category
@@ -183,7 +183,7 @@ const CreateEvent = () => {
               onChange={(e) => setFormData({ ...formData, hostedBy: e.target.value })}
               type="text"
               id="hosted-by"
-              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-75"
+              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-full"
               placeholder="Enter organizer's name"
             />
           </div>
@@ -198,7 +198,7 @@ const CreateEvent = () => {
               value={formData.description}
               onChange={(e) => setFormData({ ...formData, description: e.target.value })}
               id="description"
-              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-75"
+              className="my-2 border border-gray-200 px-3 py-2 rounded-md w-full"
               placeholder="Write your event description here..."
             ></textarea>
           </div>

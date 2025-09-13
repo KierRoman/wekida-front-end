@@ -5,7 +5,7 @@ import { Link } from "react-router";
 import * as eventService from "../../services/eventService"; // Import eventService for API calls
 
 const Dashboard = () => {
-  const [events, setEvents] = useState([1]);
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -55,8 +55,8 @@ const Dashboard = () => {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-8">
-            {events.map((event, i) => (
-              <div className="shadow-md hover:shadow-lg rounded-md p-4">
+            {events.map((event) => (
+              <div key={event._id} className="shadow-md hover:shadow-lg rounded-md p-4">
                 <p className="font-bold text-xl">{event.event_title}</p>
                 <p className="text-gray-700 mt-4">{event.description} </p>
                 <Link to={`/events/preview/${event._id}`} className="mt-8 block">
